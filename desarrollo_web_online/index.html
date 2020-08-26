@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
+    <meta charset="UTF-8" />
       <title>Eduardo Tellez</title>
       <link rel="icon" type="image/png" href="images/favicon.png" />
   </head>
@@ -13,13 +14,13 @@
         <nav>
           <ol>
             <li>
-              <a>Portafolio</a>
+              <a href="#portafolio">Portafolio</a>
             </li>
             <li>
-              <a>Experiencia</a>
+              <a href="#eventos">Experiencia</a>
             </li>
             <li>
-              <a>Trabajemos juntos</a>
+              <a href="#contacto">Trabajemos juntos</a>
             </li>
           </ol>
         </nav>
@@ -28,10 +29,10 @@
         <section>
           <h1>
             Hola! Soy <strong>Eduardo Téllez</strong> <br> Desarrollador <strong>Python</strong> con <br> pasión por el <strong>aprendizaje</strong>
-            <img>imagen de portada
           </h1>
+          <img src="images/hero.jpg" width="500" height="300" alt="Imagen principal del sitio">
         </section>
-        <section>
+        <section id="portafolio">
           <h2>Portafolio (Proyectos Destacados)</h2>
           <article>
             <h3>Consolidados</h3>
@@ -41,26 +42,32 @@
             <p>Este pequeño programa fue resultado de identificar
                 un proceso altamente repetitivo e interativo dentro
                 de las responsabilidades que tenía. El trabajo que
-                se hacía entre 1 - 5 días se pudo reducir a menos de
+                se realizaba en 1 a 5 días se pudo reducir a menos de
                 un minuto.
                 Se utilizó la librería de Pandas para poder trabajar
                 con archivos csv para procesar y reflejar la
-                información y resultados.
-            </p>
+                información y resultados.</p>
+                <img width="500" src="images/platzi-video-react-native.png" alt="Proyecto del curso de React-Native" />
         </article>
         </section>
-        <section>
+        <section id="eventos">
             <h2>Más sobre mi experiencia</h2>
             <article>
                 <figure>
-                    <img />
+                    <img src="images/platzi-conf.jpg" width="500"  />
                 </figure>
                 <h3>PlatziConf México 2018</h3>
                 <p>El evento más grande sobre gente que quiere aprender más de internet. En esta ocasión fue en México.</p>
-                <a>Ver plática.</a>
+                <a href="https://youtube.com/watch?v=BIS7cWGgJg0" target="_blank" />Ver plática.</a>
             </article>
         </section>
-        <section>Sección contacto</section>
+        <section id="contacto">
+          <form action="/suscripcion/">
+            <h3>¿Creamos algo juntos?</h3>
+            <input type="text" placeholder="Déjame tu email" id="email">
+            <button>Enviar</button>
+          </form>
+        </section>
         <footer>footer</footer>
     </body>
 </html>
